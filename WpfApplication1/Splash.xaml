@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication1"
         mc:Ignorable="d"
-        Title="Splash" Height="500" Width="500" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
-    <Window.Background>
-        <ImageBrush ImageSource="media/imageedit_1_5571744982.png"/>
-    </Window.Background>
-    <Grid>
-        
+        Title="Splash" Height="500" Width="500" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen" Background="{x:Null}">
+    <Grid MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+        <Grid.Background>
+            <ImageBrush ImageSource="media/dolphin-animated-gif-27.gif"/>
+        </Grid.Background>
+
     </Grid>
 </Window>

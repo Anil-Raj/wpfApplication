@@ -145,6 +145,9 @@
   <ItemGroup>
     <Resource Include="media\mCa7l.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="media\dolphin-animated-gif-27.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
