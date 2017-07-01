@@ -16,12 +16,11 @@ using System.Windows.Shapes;
 namespace WpfApplication1
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for PersonNameView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PersonNameView : UserControl
     {
-        
-        public MainWindow()
+        public PersonNameView()
         {
             InitializeComponent();
         }

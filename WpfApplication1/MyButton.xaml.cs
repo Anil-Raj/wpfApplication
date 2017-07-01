@@ -16,12 +16,11 @@ using System.Windows.Shapes;
 namespace WpfApplication1
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MyButton.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MyButton : UserControl
     {
-        
-        public MainWindow()
+        public MyButton()
         {
             InitializeComponent();
         }
