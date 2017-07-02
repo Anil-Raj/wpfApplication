@@ -55,20 +55,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AdminWindow.xaml.cs">
+    <Compile Include="Admin\AdminWindow.xaml.cs">
       <DependentUpon>AdminWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SecretWindow.xaml.cs">
+    <Compile Include="Secret\SecretWindow.xaml.cs">
       <DependentUpon>SecretWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Splash.xaml.cs">
+    <Compile Include="Splash\Splash.xaml.cs">
       <DependentUpon>Splash.xaml</DependentUpon>
     </Compile>
-    <Page Include="AdminWindow.xaml">
+    <Page Include="Admin\AdminWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="LoginWindow.xaml">
+    <Page Include="Login\LoginWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -76,43 +76,41 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="AnonymousIdentity.cs" />
+    <Compile Include="Service\Authentication\AnonymousIdentity.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="AuthenticationService.cs" />
-    <Compile Include="AuthenticationViewModel.cs" />
-    <Compile Include="Class1.cs" />
-    <Compile Include="CustomIdentity.cs" />
-    <Compile Include="CustomPrincipal.cs" />
+    <Compile Include="Service\Authentication\AuthenticationService.cs" />
+    <Compile Include="Login\AuthenticationViewModel.cs" />
+    <Compile Include="Service\Authentication\CustomIdentity.cs" />
+    <Compile Include="Service\Authentication\CustomPrincipal.cs" />
     <Compile Include="DelegateCommand.cs" />
-    <Compile Include="LoginWindow.xaml.cs">
+    <Compile Include="Login\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PersonNameView.xaml">
+    <Page Include="Person\PersonNameView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SecretWindow.xaml">
+    <Page Include="Secret\SecretWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Splash.xaml">
+    <Page Include="Splash\Splash.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Person.cs" />
-    <Compile Include="PersonNameView.xaml.cs">
+    <Compile Include="Person\PersonNameView.xaml.cs">
       <DependentUpon>PersonNameView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PersonNameViewModel.cs" />
+    <Compile Include="Person\PersonNameViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -147,6 +145,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="media\dolphin-animated-gif-27.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Wpf.Data\Wpf.Data.csproj">
+      <Project>{0FD34A9C-405A-4D76-BA4F-2EC5F4A0DF80}</Project>
+      <Name>Wpf.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

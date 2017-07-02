@@ -7,9 +7,15 @@
         mc:Ignorable="d"
         Title="Splash" Height="500" Width="500" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen" Background="{x:Null}">
     <Grid MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+        <StackPanel>
+            <TextBlock Text="{Binding AuthenticatedUser}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+               FontSize="14" HorizontalAlignment="Right" TextWrapping="Wrap" FontWeight="Bold"
+               Margin="2,2,2,2"/>
+        </StackPanel>
         <Grid.Background>
             <ImageBrush ImageSource="media/dolphin-animated-gif-27.gif"/>
         </Grid.Background>
+        
 
     </Grid>
 </Window>
