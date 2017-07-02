@@ -33,6 +33,7 @@ namespace WpfApplication1
         }
 
         public string AuthenticatedUser
+        {
             get
             {
                 if (IsAuthenticated)

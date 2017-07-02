@@ -8,7 +8,5 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <local:PersonNameView HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <local:PersonNameView HorizontalAlignment="Left" VerticalAlignment="Top"/>
-
     </Grid>
 </Window>
